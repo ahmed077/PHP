@@ -8,8 +8,8 @@
     <title><?php echo $title;?></title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/<?php
+    <?php
         $end = stripos($title, ' ');
-        echo "strtolower(substr($content, 0, $end))";?>.css">
+        echo "<link rel=\"stylesheet\" href=\"css/" . strtolower(substr($title, 0, $end)) . ".css\">";?>
 </head>
 <body>

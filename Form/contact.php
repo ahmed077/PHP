@@ -1,19 +1,13 @@
 <?php
+$title = "Contact Us";
 if (isset($_COOKIE['logged'])) {
     session_start();
 }
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Contact Page</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/contact.css">
-</head>
-<body>
-<?php require_once "base/header.html";?>
+<?php
+    require_once 'base/basic.html';
+    require_once "base/header.html";
+?>
     <h1 class="text-center text-danger">Contact Form</h1>
     <form action="" class="col-md-4 col-sm-8 col-xs-12 offset-md-4 offset-sm-2 col-xs-offset-0">
         <div class="form-group">
