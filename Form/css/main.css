@@ -1,0 +1,30 @@
+body{
+    background:url("../images/trail.jpg") no-repeat center / cover fixed;
+    color:aliceblue;
+    letter-spacing: 1px;
+    text-shadow:1px 1px 1px #000;
+}
+a, a:focus, a:hover, a:active{
+    text-decoration: none;
+    color:inherit;
+}
+h1{
+    text-align: center;
+}
+header nav, footer nav{
+    padding:20px 0 10px;
+    line-height: 50px;
+}
+header nav .icon, footer nav .icon{
+    height:50px;
+    line-height: 35px;
+    font-size: 35px;
+    font-family: cursive, sans-serif, monospace;
+}
+header+h1{
+    font-size:80px;
+    text-shadow:1px 1px 1px #ccc, -1px 1px 1px #ccc, 1px -1px 1px #ccc, -1px -1px 1px #ccc;
+}
+textarea{
+    resize: none;
+}

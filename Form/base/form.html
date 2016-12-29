@@ -1,0 +1,41 @@
+<form action="<?php $_SERVER['PHP_SELF'];?>" method="POST" class="col-md-4 col-sm-8 col-xs-12 offset-md-4 offset-sm-2 offset-xs-0">
+    <div class="form-group">
+        <label for="">User Name: </label>
+        <input type="text" name="name" class="form-control input-lg">
+    </div>
+    <?php
+    if($exist) {
+        echo '<span class="text-danger">Name already registered</span>';
+    }?>
+    <div class="form-group">
+        <label for="">Password: </label>
+        <span class="glyphicon glyphicon-eye-close"></span>
+        <input name="password" type="password" class="form-control input-lg">
+    </div>
+    <div class="form-group">
+        <label>Gender: </label>
+        <ul class="list-unstyled col-xs-12 form-control input-lg">
+            <div class="row">
+                <li class="col-xs-6">
+                    <span data-value="Male">Male</span>
+                    <span class="circle"></span>
+                </li>
+                <li class="col-xs-6">
+                    <span data-value="Female">Female</span>
+                    <span class="circle"></span>
+                </li>
+            </div>
+            <input type="hidden" name="gender">
+        </ul>
+    </div>
+    </div>
+    <div class="form-group">
+        <label for="">Email: </label>
+        <input type="text" name="email" class="form-control input-lg">
+    </div>
+    <div class="form-group">
+        <label for="">Tell Us Why You Joined: </label>
+        <textarea class="input-lg form-control" name="message" ></textarea>
+    </div>
+    <input type="submit" class="center-block form-control input-lg" value="Submit">
+</form>
