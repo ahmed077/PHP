@@ -1,0 +1,20 @@
+<header>
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 btn btn-danger icon">Ahmed</div>
+                <ul class="col-sm-8 list-unstyled text-xs-center">
+                    <li class="col-sm-3"><a href="#">Home</a></li>
+                    <li class="col-sm-2"><a href="#">About</a></li>
+                    <li class="col-sm-2"><a href="contact.php">Contact</a></li>
+                    <?php
+                    if (isset($_SESSION['logged']) && $_SESSION['logged']) {
+                        echo '<li class="col-sm-4">Logged In As ' . ucfirst($_SESSION['name']) . '</li><li class="col-sm-1"><a href="logout.php">Logout</a></li>';
+                    } else {
+                        echo '<li class="col-sm-2"><a href="login.php">Login</a></li><li class="col-sm-3"><a href="registeration.php">Registeration</a></li>';
+                    }
+                    ?>
+            </div>
+        </div>
+    </nav>
+</header>

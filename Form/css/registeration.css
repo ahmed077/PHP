@@ -1,0 +1,43 @@
+.form-group:nth-of-type(2){
+    position: relative;
+}
+.form-group:nth-of-type(2) span{
+    display:block;
+    position: absolute;
+    right:10px;
+    color:black;
+    top:60%;
+    cursor: pointer;
+}
+.form-group:nth-of-type(3) li{
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+.form-group:nth-of-type(3) li:hover{
+    text-shadow:1px 1px 1px #ccc, -1px 1px 1px #ccc, 1px -1px 1px #ccc, -1px -1px 1px #ccc;
+}
+.form-group:nth-of-type(3) li:first-of-type{
+    border-right:3px solid #555;
+}
+.form-group:nth-of-type(3) li span{
+    float:left;
+    display:block;
+    width:50%;
+}
+.form-group:nth-of-type(3) li span:last-of-type{
+    border:2px solid #555;
+    border-radius: 50%;
+    width:24px;
+    height:24px;
+}
+.circled{
+    background:#555;
+}
+.form-group:nth-of-type(3) li span:last-of-typ::after{
+    clear:both;
+}
+header nav, header ul, footer nav, footer ul{
+    padding-bottom: 0;
+    margin-bottom:0;
+}

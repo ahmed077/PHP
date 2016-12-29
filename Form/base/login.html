@@ -1,0 +1,10 @@
+<form action="<?php $_SERVER['PHP_SELF'];?>" method="POST">
+    <div class="form-group input-group-lg">
+        <input type="text" class="form-control" name="username" placeholder="UserName">
+        <input type="password" class="form-control" name="password" placeholder="********">
+        <?php if (!$exist) {
+                echo "<span class='d-block text-danger text-xs-center bg-warning'>Invalid Information</span>";
+        }?>
+        <input type="submit" value="Login" class="btn btn-danger btn-block">
+    </div>
+</form>
