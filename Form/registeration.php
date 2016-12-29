@@ -3,20 +3,9 @@ $title = "Registeration Page";
 if (isset($_COOKIE['logged'])) {
     session_start();
 }
+require_once 'base/basic.html';
+require_once 'base/header.html';
 ?>
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <title>Registeration Page</title>-->
-<!--    <link rel="stylesheet" href="css/bootstrap.min.css">-->
-<!--    <link rel="stylesheet" href="css/main.css">-->
-<!--    <link rel="stylesheet" href="css/registeration.css">-->
-<!--</head>-->
-<!--<body>-->
-
-<?php require_once 'base/basic.html';?>
-    <?php require_once 'base/header.html';?>
     <h1 class="text-center text-danger">Registeration</h1>
     <?php
     $exist = false;
@@ -30,16 +19,21 @@ if (isset($_COOKIE['logged'])) {
             $password = $_POST['password'];
             $gender = $_POST['gender'];
             $message = $_POST['message'];
-            echo "<div class='container'>
-                    <div class='row'>
-                        <div class='col-sm-12 text-xs-center'>
-                            Thank You for Registering
-                        </div>";
-            echo '<div class=\'col-sm-12 text-xs-center\'>Name: ' . $name . '</div>';
-            echo '<div class=\'col-sm-12 text-xs-center\'>password: ' . $password . '</div>';
-            echo '<div class=\'col-sm-12 text-xs-center\'>email: ' . $email . '</div>';
-            echo '<div class=\'col-sm-12 text-xs-center\'>Gender Is: ' . $gender . '</div>';
-            echo '<div class=\'col-sm-12 text-xs-center\'>Message: ' . $message . '</div></div></div>';
+            echo "
+<div class=\"container text-xs-center\">Thank You for Registering<br/>
+You Will be Redirected to Home page in 
+<span id='timer'>5</span></div>
+<script>
+i = 4;
+setInterval(function () {
+    document.getElementById('timer').textContent = i;
+    if (i == 0) {
+        location = \"home.php\";
+        clearInterval();
+    }
+    i--;
+}, 1000);</script>
+";
             if (!is_dir(__DIR__ . "/db")) {
                 mkdir("db");
             }

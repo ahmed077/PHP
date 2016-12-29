@@ -1,0 +1,13 @@
+.container-fluid{
+    height:500px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-fluid h1{
+    line-height:1.5em;
+}
+.container-fluid h1 a {
+    color:red;
+    text-shadow:1px 1px 1px black;
+}

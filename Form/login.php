@@ -1,22 +1,10 @@
 <?php
+$title = "Login Page";
 if (isset($_COOKIE['logged'])) {
     session_start();
 }
 $exist = true;
-echo " 
-<!doctype html>
-<html lang=\"en\">
-<head>
-    <meta charset=\"UTF-8\">
-    <meta name=\"viewport\"
-          content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0\">
-    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">
-    <title>Login</title>
-    <link rel=\"stylesheet\" href=\"css/bootstrap.min.css\">
-    <link rel=\"stylesheet\" href=\"css/main.css\">
-    <link rel=\"stylesheet\" href=\"css/login.css\">
-</head>
-<body>";
+require_once "base/basic.html";
 if (!isset($_COOKIE['logged']) && $_SERVER['REQUEST_METHOD'] == 'POST') {
     $name = $_POST['username'];
     $password = $_POST['password'];

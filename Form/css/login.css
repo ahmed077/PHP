@@ -1,6 +1,7 @@
 form{
     max-width:500px;
-    margin:50px auto;
+    margin:auto;
+    padding-top:50px;
 }
 input{
     margin-bottom:20px;
