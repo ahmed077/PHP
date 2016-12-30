@@ -8,7 +8,7 @@ if (isset($_COOKIE['logged'])) {
     require_once 'base/basic.html';
     require_once "base/header.html";
 ?>
-    <h1 class="text-center text-danger">Contact Form</h1>
+    <h1 class="text-xs-center text-danger">Contact Form</h1>
     <form action="" class="col-md-4 col-sm-8 col-xs-12 offset-md-4 offset-sm-2 col-xs-offset-0">
         <div class="form-group">
             <label for="">Name: </label>

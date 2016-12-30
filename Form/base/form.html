@@ -1,7 +1,7 @@
 <form action="<?php $_SERVER['PHP_SELF'];?>" method="POST" class="col-md-4 col-sm-8 col-xs-12 offset-md-4 offset-sm-2 offset-xs-0">
     <div class="form-group">
         <label for="">User Name: </label>
-        <input type="text" name="name" class="form-control input-lg">
+        <input type="text" name="name" class="form-control input-lg" required>
     </div>
     <?php
     if($exist) {
@@ -10,7 +10,7 @@
     <div class="form-group">
         <label for="">Password: </label>
         <span class="glyphicon glyphicon-eye-close"></span>
-        <input name="password" type="password" class="form-control input-lg">
+        <input name="password" type="password" class="form-control input-lg" required>
     </div>
     <div class="form-group">
         <label>Gender: </label>
@@ -25,13 +25,14 @@
                     <span class="circle"></span>
                 </li>
             </div>
-            <input type="hidden" name="gender">
+            <input type="hidden" name="gender" disabled>
         </ul>
+        <div class="clearfix"></div>
     </div>
     </div>
     <div class="form-group">
         <label for="">Email: </label>
-        <input type="text" name="email" class="form-control input-lg">
+        <input type="text" name="email" class="form-control input-lg" required>
     </div>
     <div class="form-group">
         <label for="">Tell Us Why You Joined: </label>
