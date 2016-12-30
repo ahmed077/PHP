@@ -6,7 +6,7 @@ if (isset($_COOKIE['logged'])) {
 require_once 'base/basic.html';
 require_once 'base/header.html';
 ?>
-    <h1 class="text-center text-danger">Registeration</h1>
+    <h1 class="text-xs-center text-danger">Registeration</h1>
     <?php
     $exist = false;
     if (isset($_SESSION['logged'])) {

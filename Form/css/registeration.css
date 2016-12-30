@@ -1,7 +1,7 @@
 .form-group:nth-of-type(2){
     position: relative;
 }
-.form-group:nth-of-type(2) span{
+.form-group:nth-of-type(2) i{
     display:block;
     position: absolute;
     right:10px;
@@ -15,17 +15,17 @@
     cursor: pointer;
 }
 .form-group:nth-of-type(3) li:hover{
-    text-shadow:1px 1px 1px #ccc, -1px 1px 1px #ccc, 1px -1px 1px #ccc, -1px -1px 1px #ccc;
+    text-shadow:1px 1px 1px #fff, -1px 1px 1px #fff, 1px -1px 1px #fff, -1px -1px 1px #fff;
 }
 .form-group:nth-of-type(3) li:first-of-type{
     border-right:3px solid #555;
 }
-.form-group:nth-of-type(3) li span{
+.form-group li span{
     float:left;
     display:block;
     width:50%;
 }
-.form-group:nth-of-type(3) li span:last-of-type{
+.form-group li .circle{
     border:2px solid #555;
     border-radius: 50%;
     width:24px;
@@ -33,6 +33,15 @@
 }
 .circled{
     background:#555;
+}
+.form-group .error-msg {
+    color:red;
+    font-weight:bold;
+    letter-spacing:1px;
+    font-size:16px;
+}
+.form-group .error-field, .form-group li .error-field {
+    border-color:red;
 }
 .form-group:nth-of-type(3) li span:last-of-typ::after{
     clear:both;
