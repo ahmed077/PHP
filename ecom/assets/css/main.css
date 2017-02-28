@@ -1,0 +1,140 @@
+/*
+    General Rules
+*/
+@font-face {
+    font-family: "Jozor";
+    src: url('../fonts/JF-Flat-regular.eot');
+    src: url('../fonts/JF-Flat-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/JF-Flat-regular.svg#JF Flat Regular') format('svg'),
+    url('../fonts/JF-Flat-regular.woff') format('woff'),
+    url('../fonts/JF-Flat-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family:Jozor, Tahoma, Arial;
+    background:#f4f4f4;
+    font-size: 16px;
+}
+a, a:focus, a:hover, a:active{
+    color:inherit;
+    text-decoration: none;
+}
+i{
+    margin-right:5px;
+}
+.btn + .btn {
+    margin-left:5px;
+}
+h1 {
+    font-weight:bold;
+    margin-top:40px;
+    margin-bottom:65px;
+    font-family: Tahoma;
+    font-size: 60px;
+}
+header nav, footer nav{
+    line-height: 50px;
+}
+.asterisk{
+    position: absolute;
+    right: 20px;
+    top: 8px;
+}
+i.fa-eye, i.fa-eye-slash{
+    cursor: pointer;
+    position:absolute;
+    right:40px;
+    top:5px;
+}
+/*
+    Bootstrap Edits
+*/
+.form-control{
+    margin-bottom:10px;
+    background:none;
+    opacity:.9;
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    border-bottom-width:3px;
+    position: relative;
+}
+.form-control:hover, .form-control:focus{
+    background:none;
+}
+.navbar{
+    margin: 0;
+    border-radius: 0;
+    border:none;
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+    background-color: #e74c3c;
+}
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{margin-left:0;}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+    color:#fff;
+    transition:all .5s ease-in-out;
+    padding-left:25px;
+}
+.dropdown-menu{
+    min-width: 180px;
+}
+.navbar-nav > li > .dropdown-menu{
+    background-color: #262626;
+}
+.dropdown-menu > li > a {
+    text-decoration: none;
+    color: #f5f5f5;
+    background-color: inherit;
+}
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-brand:hover{
+    background-color: #c0392b;
+    color:#fff;
+}
+/*
+    Header
+*/
+header .upper-bar {
+
+}
+/*
+    LOGIN PAGE
+*/
+.login, .signup{margin-top:100px;}
+.signup{display:none;}
+.login-header span{cursor: pointer;}
+.login-header .bold[data-target='.login']{color:#337ab7;}
+.login-header .bold[data-target='.signup']{color:#5cb85c;}
+/*
+    Redirect Page
+*/
+.redirect{
+    margin:50px auto;
+}
+/*
+    Categories Page
+*/
+.price-tag{
+    position: absolute;
+    top:4px;
+    left:19px;
+    background:white;
+    padding:3px 5px;
+}
+/*
+    PROFILE PAGE
+*/
+.mgtop {
+    margin-top:20px;
+}
+/*
+    Create Ad Page
+*/
+.create-ad-panel {
+    padding:20px;
+}
+.create-ad-panel .selectboxit-container span,.create-ad-panel .selectboxit-container .selectboxit-options a {
+    height:40px;
+    line-height:40px;
+}
