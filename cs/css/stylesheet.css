@@ -1,0 +1,20 @@
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    color: white;
+    background: #31b0d5;
+}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+    background: #e7e7e7;
+}
+h1 {
+    font-size:80px;
+    font-family: Tahoma, sans-serif, Arial;
+    margin:50px auto 100px;
+}
+a,a:hover,a:focus,a:active{text-decoration: none;}
+.navbar{border-radius: 0;}
+.addcourse .dropdown-menu {
+    width:100%;
+}
+.addcourse .form-group:not(:first-of-type) {
+    display:none;
+}
